@@ -32,8 +32,16 @@
     "webpack-dev-middleware": "^1.12.0",
     "stats-webpack-plugin": "latest",
     "style-loader": "^0.18.2",
+    "babel-loader": "^7.1.2",
+    "postcss-loader": "^2.0.6",
     "url-loader": "^0.5.9",
-    "webpack-hot-middleware": "^2.19.1"
+    "webpack-hot-middleware": "^2.19.1",
+    "json-loader": "^0.5.7",
+    "file-loader": "^0.11.2",
+    "imports-loader": "^0.7.1",
+    "resolve-url": "^0.2.1",
+    "resolve-url-loader": "^2.1.0",
+    "css-loader": "^0.28.7"
 
   },
   "engines": {
@@ -73,7 +81,6 @@
     "babel-eslint": "^7.2.3",
     "babel-jest": "^21.2.0",
     "babel-jscs": "^3.0.0-beta1",
-    "babel-loader": "^7.1.2",
     "babel-plugin-es6-promise": "^1.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-assign": "^6.22.0",
@@ -86,21 +93,13 @@
     "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.1.2",
     "classnames": "^2.2.5",
-    "css-loader": "^0.28.7",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-15": "^1.0.1",
-    "express": "^4.15.4",
     "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-
-    "imports-loader": "^0.7.1",
     "jest": "^21.2.1",
     "jquery": "^3.2.1",
-    "jsdom": "^11.2.0",
-    "json-loader": "^0.5.7",
     "mocha": "^3.5.0",
     "mongoose": "^4.12.1",
-    "postcss-loader": "^2.0.6",
     "react-addons-perf": "^15.4.2",
     "react-addons-test-utils": "^15.6.2",
     "react-music-player": "^1.0.3",
@@ -110,8 +109,6 @@
     "react-test-renderer": "^15.5.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "resolve-url": "^0.2.1",
-    "resolve-url-loader": "^2.1.0",
     "sinon": "^4.1.2",
     "snapsvg": "^0.5.1"
   }
