@@ -51,7 +51,7 @@
     "start": "node server/index.js",
     "preinstall": "npm install -g webpack webpack-cli rimraf",
     "depcheck": "node_modules/.bin/depcheck --ignore-dirs=dist,.artifacts,src/containers,src/img,src/svg,src/network,src/template,src/Utils",
-    "build": "npm run preinstall && rimraf dist && webpack --config ./webpack.config.js --progress --profile --colors",
+    "build": "webpack --config ./webpack.config.js --progress --profile --colors",
     "test": "jest"
   },
   "babel": {
