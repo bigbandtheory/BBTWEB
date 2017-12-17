@@ -1,0 +1,811 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Contact Us  Contact Us should mount 1`] = `
+<div
+  className="row pattern-black contact logo-container"
+  id="contact"
+>
+  <div
+    className="container"
+  >
+    <h2
+      className="sectionTitle f-damion c-white mTop100"
+    >
+      Get in Touch!
+    </h2>
+    <h6
+      className="f-robotoSlab fw-400 c-turquoise t-center mBottom30"
+    >
+      Be the first to know about our Events, Artist, Music
+    </h6>
+    <form>
+      <div
+        className="col-lg-8 col-centered"
+      >
+        <div
+          className="col-lg-6"
+        >
+          <span
+            className="input input--kozakura"
+            style={
+              Object {
+                "height": "auto",
+                "minHeight": 120,
+              }
+            }
+          >
+            <input
+              className="input__field input__field--kozakura"
+              id={undefined}
+              maxLength={25000}
+              name="name"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyUp={undefined}
+              pattern={undefined}
+              placeholder=""
+              required={true}
+              tabIndex={undefined}
+              type="text"
+            />
+            <label
+              className="input__label input__label--kozakura"
+              htmlFor="input-9"
+            >
+              <span
+                className="input__label-content input__label-content--kozakura"
+                data-content="Name"
+              >
+                Name
+              </span>
+            </label>
+            <svg
+              className="graphic graphic--kozakura"
+              height="100%"
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 60"
+              width="300%"
+            >
+              <path
+                d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          className="col-lg-6"
+        >
+          <span
+            className="input input--kozakura"
+            style={
+              Object {
+                "height": "auto",
+                "minHeight": 120,
+              }
+            }
+          >
+            <input
+              className="input__field input__field--kozakura"
+              id={undefined}
+              maxLength={25000}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyUp={undefined}
+              pattern={undefined}
+              placeholder=""
+              required={true}
+              tabIndex={undefined}
+              type="email"
+            />
+            <label
+              className="input__label input__label--kozakura"
+              htmlFor="input-9"
+            >
+              <span
+                className="input__label-content input__label-content--kozakura"
+                data-content="Email"
+              >
+                Email
+              </span>
+            </label>
+            <svg
+              className="graphic graphic--kozakura"
+              height="100%"
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 60"
+              width="300%"
+            >
+              <path
+                d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="col-lg-10 col-centered"
+      >
+        <div
+          className="col-lg-12"
+        >
+          <span
+            className="input input--kozakura"
+            style={
+              Object {
+                "height": "auto",
+                "minHeight": 120,
+              }
+            }
+          >
+            <input
+              className="input__field input__field--kozakura"
+              id={undefined}
+              maxLength={25000}
+              name="message"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyUp={undefined}
+              pattern={undefined}
+              placeholder=""
+              required={true}
+              tabIndex={undefined}
+              type="text"
+            />
+            <label
+              className="input__label input__label--kozakura"
+              htmlFor="input-9"
+            >
+              <span
+                className="input__label-content input__label-content--kozakura"
+                data-content="Message"
+              >
+                Message
+              </span>
+            </label>
+            <svg
+              className="graphic graphic--kozakura"
+              height="100%"
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 60"
+              width="300%"
+            >
+              <path
+                d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="col-lg-12 t-center"
+      >
+        <a
+          className=" gradientButton pink inverse mTop50"
+          href={null}
+          onClick={[Function]}
+        >
+          SEND MESSAGE
+        </a>
+      </div>
+    </form>
+  </div>
+  <div
+    className="container mTop50 mBottom50"
+  >
+    <div
+      className="col-lg-8 col-sm-10 col-centered"
+    >
+      <div
+        className="col-lg-12 col-sm-12"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-4 col-sm-4 col-xs-12 t-center mBottom40"
+          >
+            <i
+              className="flaticon-laptop15 c-pink iconSize45 mBottom20 hvr-buzz-out"
+            />
+            <h6
+              className="f-raleway fw-700 c-white"
+            >
+              E-Mail
+            </h6>
+            <p
+              className="c-lightGrey t-center"
+            >
+              <a
+                className="textButtonWhite"
+                href="mailto:info@thebigbandtheory.net"
+              >
+                info@thebigbandtheory.net
+              </a>
+            </p>
+          </div>
+          <div
+            className="col-lg-4 col-sm-4 col-xs-12 t-center mBottom40"
+          >
+            <i
+              className="flaticon-smart1 c-pink iconSize45 mBottom20 hvr-buzz-out"
+            />
+            <h6
+              className="f-raleway fw-700 c-white"
+            >
+              Phone
+            </h6>
+            <p
+              className="c-lightGrey t-center"
+            >
+              +91-8882003835
+            </p>
+          </div>
+          <div
+            className="col-lg-4 col-sm-4 col-xs-12 t-center mBottom40"
+          >
+            <i
+              className="flaticon-open79 c-pink iconSize45 mBottom20 hvr-buzz-out"
+            />
+            <h6
+              className="f-raleway fw-700 c-white"
+            >
+              Address
+            </h6>
+            <p
+              className="c-lightGrey t-center"
+            >
+              190 model colony araghar, 
+              <br />
+              Dehradun, Uttrakhand 248001
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Component Contact Us  It should mount 1`] = `
+<div
+  className="row pattern-black contact logo-container"
+  id="contact"
+>
+  <div
+    className="container"
+  >
+    <h2
+      className="sectionTitle f-damion c-white mTop100"
+    >
+      Get in Touch!
+    </h2>
+    <h6
+      className="f-robotoSlab fw-400 c-turquoise t-center mBottom30"
+    >
+      Be the first to know about our Events, Artist, Music
+    </h6>
+    <form>
+      <div
+        className="col-lg-8 col-centered"
+      >
+        <div
+          className="col-lg-6"
+        >
+          <span
+            className="input input--kozakura"
+            style={
+              Object {
+                "height": "auto",
+                "minHeight": 120,
+              }
+            }
+          >
+            <input
+              className="input__field input__field--kozakura"
+              id={undefined}
+              maxLength={25000}
+              name="name"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyUp={undefined}
+              pattern={undefined}
+              placeholder=""
+              required={true}
+              tabIndex={undefined}
+              type="text"
+            />
+            <label
+              className="input__label input__label--kozakura"
+              htmlFor="input-9"
+            >
+              <span
+                className="input__label-content input__label-content--kozakura"
+                data-content="Name"
+              >
+                Name
+              </span>
+            </label>
+            <svg
+              className="graphic graphic--kozakura"
+              height="100%"
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 60"
+              width="300%"
+            >
+              <path
+                d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          className="col-lg-6"
+        >
+          <span
+            className="input input--kozakura"
+            style={
+              Object {
+                "height": "auto",
+                "minHeight": 120,
+              }
+            }
+          >
+            <input
+              className="input__field input__field--kozakura"
+              id={undefined}
+              maxLength={25000}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyUp={undefined}
+              pattern={undefined}
+              placeholder=""
+              required={true}
+              tabIndex={undefined}
+              type="email"
+            />
+            <label
+              className="input__label input__label--kozakura"
+              htmlFor="input-9"
+            >
+              <span
+                className="input__label-content input__label-content--kozakura"
+                data-content="Email"
+              >
+                Email
+              </span>
+            </label>
+            <svg
+              className="graphic graphic--kozakura"
+              height="100%"
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 60"
+              width="300%"
+            >
+              <path
+                d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="col-lg-10 col-centered"
+      >
+        <div
+          className="col-lg-12"
+        >
+          <span
+            className="input input--kozakura"
+            style={
+              Object {
+                "height": "auto",
+                "minHeight": 120,
+              }
+            }
+          >
+            <input
+              className="input__field input__field--kozakura"
+              id={undefined}
+              maxLength={25000}
+              name="message"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyUp={undefined}
+              pattern={undefined}
+              placeholder=""
+              required={true}
+              tabIndex={undefined}
+              type="text"
+            />
+            <label
+              className="input__label input__label--kozakura"
+              htmlFor="input-9"
+            >
+              <span
+                className="input__label-content input__label-content--kozakura"
+                data-content="Message"
+              >
+                Message
+              </span>
+            </label>
+            <svg
+              className="graphic graphic--kozakura"
+              height="100%"
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 60"
+              width="300%"
+            >
+              <path
+                d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="col-lg-12 t-center"
+      >
+        <a
+          className=" gradientButton pink inverse mTop50"
+          href={null}
+          onClick={[Function]}
+        >
+          SEND MESSAGE
+        </a>
+      </div>
+    </form>
+  </div>
+  <div
+    className="container mTop50 mBottom50"
+  >
+    <div
+      className="col-lg-8 col-sm-10 col-centered"
+    >
+      <div
+        className="col-lg-12 col-sm-12"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-4 col-sm-4 col-xs-12 t-center mBottom40"
+          >
+            <i
+              className="flaticon-laptop15 c-pink iconSize45 mBottom20 hvr-buzz-out"
+            />
+            <h6
+              className="f-raleway fw-700 c-white"
+            >
+              E-Mail
+            </h6>
+            <p
+              className="c-lightGrey t-center"
+            >
+              <a
+                className="textButtonWhite"
+                href="mailto:info@thebigbandtheory.net"
+              >
+                info@thebigbandtheory.net
+              </a>
+            </p>
+          </div>
+          <div
+            className="col-lg-4 col-sm-4 col-xs-12 t-center mBottom40"
+          >
+            <i
+              className="flaticon-smart1 c-pink iconSize45 mBottom20 hvr-buzz-out"
+            />
+            <h6
+              className="f-raleway fw-700 c-white"
+            >
+              Phone
+            </h6>
+            <p
+              className="c-lightGrey t-center"
+            >
+              +91-8882003835
+            </p>
+          </div>
+          <div
+            className="col-lg-4 col-sm-4 col-xs-12 t-center mBottom40"
+          >
+            <i
+              className="flaticon-open79 c-pink iconSize45 mBottom20 hvr-buzz-out"
+            />
+            <h6
+              className="f-raleway fw-700 c-white"
+            >
+              Address
+            </h6>
+            <p
+              className="c-lightGrey t-center"
+            >
+              190 model colony araghar, 
+              <br />
+              Dehradun, Uttrakhand 248001
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Contact Us should mount 1`] = `
+<div
+  className="row pattern-black contact logo-container"
+  id="contact"
+>
+  <div
+    className="container"
+  >
+    <h2
+      className="sectionTitle f-damion c-white mTop100"
+    >
+      Get in Touch!
+    </h2>
+    <h6
+      className="f-robotoSlab fw-400 c-turquoise t-center mBottom30"
+    >
+      Be the first to know about our Events, Artist, Music
+    </h6>
+    <form>
+      <div
+        className="col-lg-8 col-centered"
+      >
+        <div
+          className="col-lg-6"
+        >
+          <span
+            className="input input--kozakura"
+            style={
+              Object {
+                "height": "auto",
+                "minHeight": 120,
+              }
+            }
+          >
+            <input
+              className="input__field input__field--kozakura"
+              id={undefined}
+              maxLength={25000}
+              name="name"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyUp={undefined}
+              pattern={undefined}
+              placeholder=""
+              required={true}
+              tabIndex={undefined}
+              type="text"
+            />
+            <label
+              className="input__label input__label--kozakura"
+              htmlFor="input-9"
+            >
+              <span
+                className="input__label-content input__label-content--kozakura"
+                data-content="Name"
+              >
+                Name
+              </span>
+            </label>
+            <svg
+              className="graphic graphic--kozakura"
+              height="100%"
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 60"
+              width="300%"
+            >
+              <path
+                d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          className="col-lg-6"
+        >
+          <span
+            className="input input--kozakura"
+            style={
+              Object {
+                "height": "auto",
+                "minHeight": 120,
+              }
+            }
+          >
+            <input
+              className="input__field input__field--kozakura"
+              id={undefined}
+              maxLength={25000}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyUp={undefined}
+              pattern={undefined}
+              placeholder=""
+              required={true}
+              tabIndex={undefined}
+              type="email"
+            />
+            <label
+              className="input__label input__label--kozakura"
+              htmlFor="input-9"
+            >
+              <span
+                className="input__label-content input__label-content--kozakura"
+                data-content="Email"
+              >
+                Email
+              </span>
+            </label>
+            <svg
+              className="graphic graphic--kozakura"
+              height="100%"
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 60"
+              width="300%"
+            >
+              <path
+                d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="col-lg-10 col-centered"
+      >
+        <div
+          className="col-lg-12"
+        >
+          <span
+            className="input input--kozakura"
+            style={
+              Object {
+                "height": "auto",
+                "minHeight": 120,
+              }
+            }
+          >
+            <input
+              className="input__field input__field--kozakura"
+              id={undefined}
+              maxLength={25000}
+              name="message"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyUp={undefined}
+              pattern={undefined}
+              placeholder=""
+              required={true}
+              tabIndex={undefined}
+              type="text"
+            />
+            <label
+              className="input__label input__label--kozakura"
+              htmlFor="input-9"
+            >
+              <span
+                className="input__label-content input__label-content--kozakura"
+                data-content="Message"
+              >
+                Message
+              </span>
+            </label>
+            <svg
+              className="graphic graphic--kozakura"
+              height="100%"
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 60"
+              width="300%"
+            >
+              <path
+                d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="col-lg-12 t-center"
+      >
+        <a
+          className=" gradientButton pink inverse mTop50"
+          href={null}
+          onClick={[Function]}
+        >
+          SEND MESSAGE
+        </a>
+      </div>
+    </form>
+  </div>
+  <div
+    className="container mTop50 mBottom50"
+  >
+    <div
+      className="col-lg-8 col-sm-10 col-centered"
+    >
+      <div
+        className="col-lg-12 col-sm-12"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-4 col-sm-4 col-xs-12 t-center mBottom40"
+          >
+            <i
+              className="flaticon-laptop15 c-pink iconSize45 mBottom20 hvr-buzz-out"
+            />
+            <h6
+              className="f-raleway fw-700 c-white"
+            >
+              E-Mail
+            </h6>
+            <p
+              className="c-lightGrey t-center"
+            >
+              <a
+                className="textButtonWhite"
+                href="mailto:info@thebigbandtheory.net"
+              >
+                info@thebigbandtheory.net
+              </a>
+            </p>
+          </div>
+          <div
+            className="col-lg-4 col-sm-4 col-xs-12 t-center mBottom40"
+          >
+            <i
+              className="flaticon-smart1 c-pink iconSize45 mBottom20 hvr-buzz-out"
+            />
+            <h6
+              className="f-raleway fw-700 c-white"
+            >
+              Phone
+            </h6>
+            <p
+              className="c-lightGrey t-center"
+            >
+              +91-8882003835
+            </p>
+          </div>
+          <div
+            className="col-lg-4 col-sm-4 col-xs-12 t-center mBottom40"
+          >
+            <i
+              className="flaticon-open79 c-pink iconSize45 mBottom20 hvr-buzz-out"
+            />
+            <h6
+              className="f-raleway fw-700 c-white"
+            >
+              Address
+            </h6>
+            <p
+              className="c-lightGrey t-center"
+            >
+              190 model colony araghar, 
+              <br />
+              Dehradun, Uttrakhand 248001
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

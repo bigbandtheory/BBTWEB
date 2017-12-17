@@ -1,0 +1,249 @@
+/* Preload images */
+body:after {
+  content: url(../../images/general/close.png) url(../../images/general/loading.gif) url(../../images/general/prev.png) url(../../images/general/next.png);
+  display: none;
+}
+
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+.lightboxOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: #fff;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	opacity: 1;
+	display: none;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.lightbox {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	text-align: center;
+	line-height: 0;
+	font-weight: normal;
+	top: 0 !important;
+	height: 100% !important;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  border-radius: 0px;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+	position: relative;
+	background-color: #202124;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	border-radius: 0px;
+	top: 50% !important;
+	transform: translateY(-50%);
+	z-index: 100;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-container {
+  padding: 4px;
+}
+
+.lb-loader {
+  position: absolute;
+  left: 0;
+  height: 64px;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lb-cancel {
+  display: block;
+  width: 60px;
+  height: 64px;
+  margin: 0 auto;
+  background: url(../../images/general/loading.gif) no-repeat;
+}
+
+.lb-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100% !important;
+	width: 100% !important;
+	z-index: 10;
+	display: inline-block !important;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+	width: 50%;
+	left: 0;
+	float: left;
+	background: url(../../images/general/prev.png) left 50% no-repeat;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+	width: 50%;
+	right: 0;
+	float: right;
+	background: url(../../images/general/next.png) right 50% no-repeat;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+    margin: 0 auto;
+    width: 100%;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed;
+    top: 0;
+	pointer-events: none;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #414246;
+}
+
+.lb-data .lb-details {
+	width: 100%;
+    float: none;
+    text-align: center;
+    line-height: 17px;
+    bottom: 0;
+    position: absolute;
+	z-index: 300;
+    pointer-events: all;
+}
+
+.lb-data .lb-caption {
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	font-weight: 800;
+	line-height: 1em;
+	color: #202124;
+}
+
+.lb-data .lb-number {
+	font-family: 'Roboto Slab', serif;
+	display: block;
+	clear: left;
+	padding-bottom: 7px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #ceced0;
+}
+
+.lb-close {
+  display: block;
+  float: right;
+  width: 60px;
+  height: 60px;
+  background: url(../../images/general/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lb-close:hover {
+  cursor: pointer;
+}
+
+.lb-closeContainer {
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	margin: 0;
+	right: 0;
+	top: 0;
+	background-color: #ffbe0e;
+	pointer-events: all;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.lb-closeContainer:hover {
+	background-color: #ceced0;
+	cursor: pointer;
+}
+
+.lb-closeContainer:hover .lb-close {
+	moz-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
