@@ -5,7 +5,7 @@ install:
   - npm install
 env:
   - NODE_ENV=staging
-  -NPM_CONFIG_PRODUCTION=true
+  - NPM_CONFIG_PRODUCTION=true
 script: npm run build
 deploy:
   provider: heroku
