@@ -10,7 +10,7 @@ module.exports = {
   devtool: 'eval-source-map',
   entry: {
     main : path.join(__dirname, 'src/index.js'),
-    dragability : path.join(__dirname , 'src/assets/js/draggabilly.pkgd.min.js')
+    //dragability : path.join(__dirname , 'src/assets/js/draggabilly.pkgd.min.js')
     //jqueryeasing: path.join(__dirname, 'src/assets/js/jquery.easing.1.3.js')
   },
   output: {
