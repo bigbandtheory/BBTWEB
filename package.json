@@ -27,7 +27,14 @@
     "react-router-redux": "^4.0.8",
     "react-slick": "^0.15.4",
     "react-soundplayer": "^1.0.2",
-    "webpack": "^3.6.0"
+    "webpack": "^3.6.0",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "stats-webpack-plugin": "latest",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack-hot-middleware": "^2.19.1"
+
   },
   "engines": {
     "node": "7.10.0"
@@ -85,7 +92,7 @@
     "express": "^4.15.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
-    "html-webpack-plugin": "^2.30.1",
+
     "imports-loader": "^0.7.1",
     "jest": "^21.2.1",
     "jquery": "^3.2.1",
@@ -106,12 +113,6 @@
     "resolve-url": "^0.2.1",
     "resolve-url-loader": "^2.1.0",
     "sinon": "^4.1.2",
-    "snapsvg": "^0.5.1",
-    "stats-webpack-plugin": "latest",
-    "style-loader": "^0.18.2",
-    "url-loader": "^0.5.9",
-    "webpack": "latest",
-    "webpack-dev-middleware": "^1.12.0",
-    "webpack-hot-middleware": "^2.19.1"
+    "snapsvg": "^0.5.1"
   }
 }
