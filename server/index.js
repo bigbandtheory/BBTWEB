@@ -13,6 +13,7 @@ const port = isDeveloping ? 3000 : process.env.PORT;
 const app = express();
 const bodyParser = require('body-parser');
 const databaseConfig = require('./database/config');
+const cluster = require('cluster');
 
 const clientRouter = require('./ClientRouter');
 const eventRouter  = require('./EventRouter');
@@ -22,7 +23,7 @@ app.use(compression());
 // parse application/json
 app.use(bodyParser.json());
 
-if (true) {
+if (process.env.NODE_ENV !== 'production') {
 
   const compiler = webpack(config);
   const middleware = webpackMiddleware(compiler, {
@@ -60,6 +61,12 @@ app.listen(port, '0.0.0.0', function onStart(err) {
     console.log(err);
   }
   console.info('==> Listening on port %s. Open up http://0.0.0.0:%s/ in your browser.', port, port);
+});
+
+cluster.on('exit', (worker, code, signal) => {
+  console.log('worker %d died (%s). restarting...',
+              worker.process.pid, signal || code);
+  cluster.fork();
 });
 
 app.use(logger());

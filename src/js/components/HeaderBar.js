@@ -27,8 +27,6 @@ class NavItem extends Component{
     constructor(props){
         super(props);
     }
-
-
 }
 
 class HeaderBar extends Component{
@@ -102,7 +100,6 @@ class HeaderBar extends Component{
                                     <li><a href="contact.html">Contact - 1</a></li>
                                 </ul>
                             </li>
-                            <li><a href="http://themeforest.net/user/profme/portfolio" target="_blank" className="externalLink"><span>BUY NOW</span></a></li>
                         </ul>
                     </nav>
                 </div>

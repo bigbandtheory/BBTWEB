@@ -4,7 +4,7 @@ node_js:
 install:
   - npm install
 env:
-  - NODE_ENV=staging
+  - NODE_ENV=production
   - NPM_CONFIG_PRODUCTION=true
 script: npm run build
 deploy:

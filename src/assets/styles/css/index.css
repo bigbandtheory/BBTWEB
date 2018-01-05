@@ -86,6 +86,7 @@ body { background-color: #202124; margin: 0 !important; height: 100% !important;
 
 .gallery-wrapper {
   display: block;
+  padding: 0px 80px;
 }
 
 div.gallery-wrapper iframe {

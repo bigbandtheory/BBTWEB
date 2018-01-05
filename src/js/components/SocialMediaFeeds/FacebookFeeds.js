@@ -1,6 +1,9 @@
 import React,{Component,PropTypes} from 'react';
 import initFB from '../../Utils/initFB';
 
+
+const VIDEO_SIZE = 8;
+
 export default class FaceBookPage extends Component{
 
   static defaultProps = {
@@ -47,7 +50,7 @@ export default class FaceBookPage extends Component{
   }
 
   renderFBVideos(){
-     this.state.videos.length = Math.min(this.state.videos.length - 1 , 10);
+     this.state.videos.length = VIDEO_SIZE;
      return this.state.videos.map((video, key)=>{
        let videoUrl = `https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmusictbbt%2Fvideos%2F${video.id}%2F&width=500&show_text=false&appId=${process.env.FB_APP_ID}&height=280`;
        return(
