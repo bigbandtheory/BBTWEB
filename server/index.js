@@ -44,14 +44,15 @@ if (process.env.NODE_ENV !== 'production') {
   app.use('/public',express.static(path.join(__dirname , '../public')));
   app.use('/assets',express.static(path.join(__dirname , '../src/assets/')));
   app.get('/', function response(req, res) {
-    res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
+    res.write(middleware.fileSystem.readFileSync(path.join(__dirname, '../dist/index.html')));
     res.end();
   });
 } else {
-  app.use(express.static(__dirname + '/dist'));
-  app.use('/public',express.static(path.join(__dirname , '../public')));
+  app.use('/dist', express.static(path.join(__dirname , '../dist')));
+  app.use('*/public',express.static(path.join(__dirname , '../public')));
+  app.use('*/assets',express.static(path.join(__dirname , '../dist/assets/')));
   app.get('/', function response(req, res) {
-    res.sendFile(path.join(__dirname, 'dist/index.html'));
+    res.sendFile(path.join(__dirname, '../dist/index.html'));
   });
 }
 

@@ -109,5 +109,7 @@
       "./jest-setup.js"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.3.1"
+  }
 }

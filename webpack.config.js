@@ -4,6 +4,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 //process.env.NODE_ENV = 'production';
 
 module.exports = {
@@ -16,7 +17,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist/'),
     filename: '[name]-[hash].min.js',
-    publicPath: '/'
+    publicPath: '/dist/'
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -44,7 +45,10 @@ module.exports = {
     new webpack.LoaderOptionsPlugin({
         debug: true,
         cache: false
-    })
+    }),
+    new CopyWebpackPlugin([
+        {from : 'src/assets', to : './assets'}
+    ])
   ],
   module: {
     loaders: [
@@ -52,10 +56,10 @@ module.exports = {
       test: /\.(js)$/,
       loaders: 'babel-loader',
       exclude: /node_modules/,
-       query: {
+      query: {
          cacheDirectory: true,
          presets: ['react', 'es2015','stage-0']
-       }
+      }
     },
 
     {
@@ -64,21 +68,19 @@ module.exports = {
     },
     {
       test: /\.svg(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      loader: 'file-loader?name=./dist/assets/svg/[name].[ext]',
+      loader: 'file-loader?name=./assets/svg/[name]-[hash].[ext]',
     },
     {
       test: /\.(jpg|png|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      loader: 'url-loader',
-
+      loader: 'url-loader?name=./assets/images/[name]-[hash].[ext]',
     },{
       test: /\.(woff|woff2|eot|ttf|otf)$/,
-      loader: "file-loader"
+      loader: "file-loader?name=./assets/fonts/[name]-[hash].[ext]",
     }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract({
         fallback: 'style-loader',
-        use: ['css-loader', 'resolve-url-loader'],
-        publicPath: '/'
+        use: ['css-loader', 'resolve-url-loader']
       }),
     }
     ]
