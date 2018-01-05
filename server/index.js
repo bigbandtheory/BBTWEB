@@ -24,7 +24,7 @@ app.use(compression());
 app.use(bodyParser.json());
 
 if (process.env.NODE_ENV !== 'production') {
-
+  console.log('RUNNING NON PRODUCTION SETTINGS');
   const compiler = webpack(config);
   const middleware = webpackMiddleware(compiler, {
     publicPath: config.output.publicPath,
@@ -48,6 +48,7 @@ if (process.env.NODE_ENV !== 'production') {
     res.end();
   });
 } else {
+  console.log('RUNNING PRODUCTION SETTINGS');
   app.use('/dist', express.static(path.join(__dirname , '../dist')));
   app.use('*/public',express.static(path.join(__dirname , '../public')));
   app.use('*/assets',express.static(path.join(__dirname , '../dist/assets/')));
