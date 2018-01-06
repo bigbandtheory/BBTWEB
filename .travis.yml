@@ -6,10 +6,8 @@ install:
 env:
   - NODE_ENV=heroku
 script: npm run build
-before_deploy:
-  - cd ./dist
 deploy:
-  provider: heroku
+  provider: staging
   skip_cleanup: true
   api_key:
     secure: ${HEROKU_API_KEY}
