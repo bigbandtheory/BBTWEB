@@ -47,7 +47,15 @@ if (process.env.NODE_ENV !== 'production') {
     res.write(middleware.fileSystem.readFileSync(path.join(__dirname, '../dist/index.html')));
     res.end();
   });
-} else {
+} else if(process.env.NODE_ENV === 'heroku'){
+    console.log('RUNNING HEROKU SETTINGS');
+    app.use('/dist', express.static(path.join(__dirname , 'dist')));
+        app.use('*/public',express.static(path.join(__dirname , 'public')));
+        app.use('*/assets',express.static(path.join(__dirname , 'dist/assets/')));
+        app.get('/', function response(req, res) {
+        res.sendFile(path.join(__dirname, 'dist/index.html'));
+    });
+}else {
   console.log('RUNNING PRODUCTION SETTINGS');
   app.use('/dist', express.static(path.join(__dirname , '../dist')));
   app.use('*/public',express.static(path.join(__dirname , '../public')));

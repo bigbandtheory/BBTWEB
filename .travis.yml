@@ -4,7 +4,7 @@ node_js:
 install:
   - npm install
 env:
-  - NODE_ENV=production
+  - NODE_ENV=heroku
 script: npm run build
 deploy:
   provider: heroku
