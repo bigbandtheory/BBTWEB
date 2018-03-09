@@ -48,7 +48,7 @@ export function sendSubscriptionMessage(data){
 }
 
 export function getAllArtists(){
-  return doGetRequest('/artists');
+  return doGetRequest('/artists/all');
 }
 
 export function getArtistCarousal(){
@@ -61,4 +61,8 @@ export function getArtistById(id){
 
 export function getFeaturedTracks(){
    return doGetRequest('/artists/featured/tracks');
+}
+
+export function getFeaturedArtists(){
+   return doGetRequest('/artists/featured');
 }

@@ -12,7 +12,7 @@ export default class Parrallax extends Component{
   render(){
 
     return(
-      <div className="parallax" style={{backgroundImage: `url(${this.props.backgroundImage})`}}>
+      <div className={`parallax ${this.props.className}`} style={{backgroundImage: `url(${this.props.backgroundImage})`}}>
           {this.props.children}
       </div>
     );

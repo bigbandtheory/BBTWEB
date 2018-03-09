@@ -8,7 +8,7 @@ export default function artistReducer(state = {}, action){
       case actionTypes.ARTIST_LIST:
         return {
           ...state,
-          artistList : action.data
+          list : action.data
         }
 
       case actionTypes.ARTIST_CAROUSAL:
@@ -20,6 +20,11 @@ export default function artistReducer(state = {}, action){
          return{
            ...state,
            featuredTracks: action.data
+         }
+      case actionTypes.FEATURED_ARTIST_LIST:
+         return {
+            ...state,
+            featuredList: action.data
          }
       default:
         return state;

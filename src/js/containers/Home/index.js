@@ -22,7 +22,8 @@ import Perf from 'react-addons-perf';
 import 'react-perf-tool/lib/styles.css';
 import Footer from '../../components/Footer';
 import MusicPlayer from '../../components/MusicPlayer';
-import Mp3Dock from '../../components/Mp3Dock';
+
+import './index.css';
 
 const mapStateToProps = (state) => {
    return {
@@ -46,11 +47,11 @@ class Home extends Component{
          <div style={{height : '100%'}}>
 
           <div className="icon-scroll scrollFade" style={{opacity: 1}}></div>
-          <HeaderBar />
-          <Mp3Dock />
+
+
 
           <div className="row homeSlider logo-container">
-            <HomeCarousal />
+            <HomeCarousal settings={{autoPlay: true, dots: true}}/>
           </div>
           <FastSlideShow {...this.props}>
             <div className="container hs-links">

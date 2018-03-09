@@ -1,7 +1,10 @@
 import React,{Component,PropTypes} from 'react';
 import {connect} from 'react-redux';
-import Home from './containers/Home';
 import classNames from 'classnames';
+import HeaderBar from './components/HeaderBar';
+import Footer from './components/Footer';
+import ContactUs from './components/ContactUs';
+import Mp3Dock from './components/Mp3Dock';
 
 const mapStateToProps = (state) => {
 
@@ -33,7 +36,9 @@ class MainWrapper extends Component{
       let wrapperClass = this.classNames;
       return (
         <div className={wrapperClass}>
-           <Home />
+           <HeaderBar />
+           {this.props.children}
+           <Mp3Dock />
         </div>
       );
     }

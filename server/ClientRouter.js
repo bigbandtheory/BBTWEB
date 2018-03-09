@@ -28,7 +28,10 @@ router.get('/featured' , function(req , res){
     },{
       name : 'Cross Bar',
       image: 'assets/images/clients/05.png'
-    }];
+    }
+  ];
+
+
   res.json(responseData);
 });
 

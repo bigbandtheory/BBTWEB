@@ -84,6 +84,27 @@ body { background-color: #202124; margin: 0 !important; height: 100% !important;
   height: auto;
 }
 
+.music-bar{
+    position: fixed !important;
+    width: 90px;
+    height: 90px;
+    z-index: 99999;
+    top: 30px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-indent: 2.5em;
+    //background: transparent;
+    cursor: pointer;
+    box-shadow: 0 1px 4px 1px #000;
+    height: 50px !important;
+    width: 100% !important;
+    top: 92% !important;
+    padding: 20px auto !important;
+    //background: #fff !important;
+    right: 0px;
+}
+
 .gallery-wrapper {
   display: block;
   padding: 0px 80px;
@@ -100,14 +121,7 @@ div.gallery-wrapper iframe {
   float: left;
 }
 
-@media (max-width: 560px) {
-  .player-cover {
-    display: none;
-  }
-  .artist-info {padding: 10px 35px 15px !important;}
-  .player-options {padding: 10px 0 10px !important;}
 
-}
 
 .slick-slide .container{
   padding: 50px;
@@ -122,15 +136,16 @@ div.gallery-wrapper iframe {
 
 .music-icon {
   height: 50px !important;
-  width: 50px !important;
-  top : 50% !important;
-  padding : 20px auto !important;
-  background : #fff !important;
+  width: 100% !important;
+  top: 92% !important;
+  padding: 20px auto !important;
+  background: #fff !important;
   right: 0px;
-  position : fixed !important;
+  /* position: fixed !important; */
 }
 
 .icon-wrap {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,8 +155,9 @@ div.gallery-wrapper iframe {
   font-size: 25px;
   overflow: hidden;
   margin: 0;
-  background: #fff !important;
+  background: #fff;
   z-index: 9999;
+  color: #fff;
 }
 
 .icon-wrap span.fa {
@@ -164,9 +180,10 @@ div.gallery-wrapper iframe {
 }
 
 #music-player {
-  right: -10000px;
-  position:absolute;
-  top:0px;
+  //right: -10000px;
+  position: relative;
+  width: 100%;
+  //top:0px;
 }
 
 .player-container{
@@ -4058,6 +4075,7 @@ ul.socialDark li a:after {
   text-indent: 2.5em;
   background: transparent;
   cursor: pointer;
+  box-shadow: 0 1px 4px 1px #000;
 }
 
 .menu-button::before {

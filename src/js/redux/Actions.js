@@ -2,18 +2,34 @@ import * as types from './actionTypes';
 import store from './store';
 import * as api from '../network';
 
-export function listArtist(filter = {page : 1 , size : 10}){
+export function listFeaturedArtist(){
+    return function(dispatch){
+        return api.getFeaturedArtists().then((response) => {
+            dispatch(dispatchFeaturedArtists(response));
+        });
+    }
+}
+
+function dispatchFeaturedArtists(response){
+    return {
+        type : types.FEATURED_ARTIST_LIST,
+        data : response
+    };
+}
+
+export function listAllArtist(filter = {page : 1 , size : 10}){
 
     return function(dispatch) {
        return api.getAllArtists().then((response) => {
-          dispatch((response)=>{
-            return {
-              type: types.ARTIST_LIST,
-              data: response
-            };
-          });
+          dispatch(dispatchArtistList(response));
        });
+    };
+}
 
+function dispatchArtistList(response){
+    return {
+      type: types.ARTIST_LIST,
+      data: response
     };
 }
 
@@ -128,6 +144,13 @@ function dispatchTrackList(response){
     type : types.TRACK_LIST,
     data : response
    };
+}
+
+export function selectSeat(seat){
+    return {
+       type : types.BOOKING_SELECT_SEAT,
+       seat : seat
+    }
 }
 
 

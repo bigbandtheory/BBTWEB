@@ -1,0 +1,21 @@
+.slick-dots{
+    text-align: right;
+    bottom: 0px;
+    padding: 40px 10%;
+}
+.slick-dots li{
+    position: static;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.3);
+    box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+    width: 15px;
+    height: 15px;
+}
+
+.slick-dots li:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+.slick-active {
+    background-color: rgba(255,255,255,1) !important;
+}

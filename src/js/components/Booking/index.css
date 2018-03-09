@@ -1,0 +1,28 @@
+
+.seat-wrapper{
+    width: 100%;
+    height: auto;
+}
+
+.seat {
+    width : 25px;
+    width : 25px;
+    color : #fff;
+
+}
+
+.seat-price{
+    font-size: 15px;
+    font-family: sans-sarif;
+    text-align: center;
+}
+
+.seat-container{
+   background-color: #ccc;
+}
+
+.selected{
+   background-color: red;
+   pointer-events: none;
+}
+

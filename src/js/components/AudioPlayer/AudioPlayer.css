@@ -2,43 +2,52 @@
 .no-height {
   height: 0 !important;
 }
+
+
 .player-container {
-  width: 435px;
+  width: 86%;
   margin: 0 auto;
+  display: flex;
   overflow: hidden;
-  background-color: #EAEDEF;
+  //background-color: #EAEDEF;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  //box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .player-cover {
-  height: 160px;
-  background-position: top center;
-  background-size: cover;
-  transition: height .4s;
+    height: 50px;
+    width: 50px;
+    background-position: top center;
+    background-size: cover;
+    transition: height .4s;
 }
 .artist-info {
-  padding: 60px 35px 35px;
+  //padding: 35px 35px 35px;
+  padding: 0px;
+  display: flex;
+  width: 35%;
 }
 .artist-name,
 .artist-song-name {
   margin: 0;
 }
 .artist-name {
-  margin-bottom: 5px;
+  padding: 3px 0px;
   font-size: 32px;
   font-weight: 400;
 }
 .artist-song-name {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
+  width: auto;
+  padding: 10px 0px;
 }
 .player-progress-container {
-  position: relative;
-  width: 365px;
-  height: 9px;
-  margin: 0 auto;
-  background-color: #414141;
-  border-radius: 40px;
+ position: relative;
+ width: 365px;
+ height: 9px;
+ margin: 20px 30px;
+ background-color: #414141;
+ border-radius: 40px;
 }
 .player-progress-value {
   position: absolute;
@@ -60,17 +69,18 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 2px;
 }
 .player-options {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 0 20px;
-  width: 365px;
-  margin: 0 auto;
+ display: flex;
+ justify-content: space-evenly;
+ padding: 0px;
+ width: 365px;
+ /* margin: 0 auto; */
+ height: 50px;
 }
 .player-buttons {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 135px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    //width: auto;
 }
 .player-btn {
   display: inline-flex;
@@ -91,18 +101,18 @@
   color: #838C92;
 }
 .player-btn.big {
-  width: 70px;
-  height: 70px;
+  width: 45px;
+  height: 45px;
 }
 .player-btn.big i {
-  font-size: 36px;
+  font-size: 18px;
 }
 .player-btn.medium {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 .player-btn.medium i {
-  font-size: 15px;
+  font-size: 12px;
 }
 .player-btn.volume {
   width: 40px;

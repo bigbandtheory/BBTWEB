@@ -8,7 +8,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 //process.env.NODE_ENV = 'production';
 
 module.exports = {
-  devtool: 'eval-source-map',
+  devtool: 'source-map',
   entry: {
     main : path.join(__dirname, 'src/index.js'),
     //dragability : path.join(__dirname , 'src/assets/js/draggabilly.pkgd.min.js')
@@ -43,7 +43,8 @@ module.exports = {
       'process.env.FB_APP_ID': '1394137447399587'
     }),
     new webpack.LoaderOptionsPlugin({
-        debug: true,
+      "__DEVTOOLS__": true,
+        debug: false,
         cache: false
     }),
     new CopyWebpackPlugin([

@@ -33,24 +33,23 @@ class Mp3Dock extends Component {
 
   render(){
      let wrapperCls= classnames({
-        'menu-button music-icon' : true
+        'music-bar  pattern-white' : true,
+
      });
      let iconCls = classnames({
-        'fa fa-music': this.props.open === false,
-        'fa fa-close': this.props.open === true
+        'fa fa-music': true
      });
      let slideCls = classnames({
-       'slide-in' : this.props.open === true,
-       'slide-out' : this.props.open === false
+         'slide-in' : true,
      });
      return(
        <div className={wrapperCls}>
         <div>
-            <div className="icon-wrap" onClick={this.props.onClick.bind(this , this.props.open)}>
+            <div className="icon-wrap">
               <span className={iconCls} aria-hidden="true" />
             </div>
              <div className={slideCls} id="music-player">
-               <MusicPlayer/>
+               <MusicPlayer autoplay = {false}/>
             </div>
         </div>
        </div>

@@ -25,6 +25,7 @@ class AudioPlayer extends PureComponent {
     onPause: () => {},
     onPrevious: () => {},
     onNext: () => {},
+    autoplay : false
   };
 
   constructor(props) {
@@ -36,7 +37,7 @@ class AudioPlayer extends PureComponent {
       current: 0,
       progress: 0,
       random: false,
-      playing: !!props.autoplay,
+      playing: props.autoplay,
       repeat: false,
       mute: false,
     };
@@ -56,7 +57,7 @@ class AudioPlayer extends PureComponent {
       props.onEnded(e);
     });
     this.audio.addEventListener('error', e => {
-      this.next();
+      //this.next();
 
       props.onError(e);
     });
@@ -215,7 +216,7 @@ class AudioPlayer extends PureComponent {
       'active': repeat,
     });
 
-		return (
+    return (
       <div className="player-container">
 
         <div className={coverClass} style={{backgroundImage: `url(${currentSong.cover || ''})`}}></div>

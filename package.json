@@ -27,6 +27,7 @@
     "classnames": "^2.2.5",
     "cluster": "^0.7.7",
     "compression": "^1.7.1",
+    "copy-webpack-plugin": "^4.3.1",
     "css-loader": "^0.28.7",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-15": "^1.0.1",
@@ -75,8 +76,7 @@
     "url-loader": "^0.5.9",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0",
-    "webpack-hot-middleware": "^2.19.1",
-    "copy-webpack-plugin": "^4.3.1"
+    "webpack-hot-middleware": "^2.19.1"
   },
   "engines": {
     "node": "7.10.0"
@@ -111,6 +111,6 @@
     ]
   },
   "devDependencies": {
-
+    "normalizr": "^3.2.4"
   }
 }

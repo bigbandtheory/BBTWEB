@@ -1,15 +1,22 @@
 import React,{Component,PropTypes} from 'react';
 import {Provider,connect} from 'react-redux';
-import HeaderBar from './components/HeaderBar';
 import store from './redux/store';
-import MainWrapper from './MainWrapper';
 import * as actions from './redux/Actions';
+import { Router, Route, IndexRoute } from 'react-router';
+import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
+import {createBrowserHistory} from 'history';
+import Routes from './Routes';
 
 
 class App extends Component{
 
     constructor(props){
       super(props);
+    }
+
+    componentWillMount(){
+        const browserHistory = createBrowserHistory();
+        this.history = syncHistoryWithStore(browserHistory, store);
     }
 
     componentDidMount(){
@@ -20,9 +27,12 @@ class App extends Component{
     }
 
     render(){
+
       return(
          <Provider store={store}>
-           <MainWrapper />
+            <Router history={this.history}>
+                <Routes />
+            </Router>
          </Provider>
       );
     }

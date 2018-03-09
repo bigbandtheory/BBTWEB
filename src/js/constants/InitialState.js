@@ -16,7 +16,8 @@ export const initialState = {
        list: [],
        carousal :{
 
-       }
+       },
+       featuredList: []
      },
      musicPlayer : {
        songs :[]

@@ -23,6 +23,25 @@ app.use(compression());
 // parse application/json
 app.use(bodyParser.json());
 
+app.use(logger());
+
+app.use('/clients', clientRouter);
+app.use('/events',  eventRouter);
+app.use('/artists', artistRouter);
+
+
+
+app.post('/subscribe' , function(req , res){
+  let response = {
+    message: 'Something went wrong , please contact us.'
+  }
+  if(req.body.email){
+    response.message ='Thanks for subscribing.';
+  }
+  res.json(response);
+});
+
+
 if (process.env.NODE_ENV !== 'production') {
   console.log('RUNNING NON PRODUCTION SETTINGS');
   const compiler = webpack(config);
@@ -43,7 +62,7 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(webpackHotMiddleware(compiler));
   app.use('/public',express.static(path.join(__dirname , '../public')));
   app.use('/assets',express.static(path.join(__dirname , '../src/assets/')));
-  app.get('/', function response(req, res) {
+  app.get('/*', function response(req, res) {
     res.write(middleware.fileSystem.readFileSync(path.join(__dirname, '../dist/index.html')));
     res.end();
   });
@@ -52,7 +71,7 @@ if (process.env.NODE_ENV !== 'production') {
     app.use('/dist', express.static(path.join(__dirname , 'dist')));
         app.use('*/public',express.static(path.join(__dirname , 'public')));
         app.use('*/assets',express.static(path.join(__dirname , 'dist/assets/')));
-        app.get('/', function response(req, res) {
+        app.get('*', function response(req, res) {
         res.sendFile(path.join(__dirname, 'dist/index.html'));
     });
 }else {
@@ -60,8 +79,8 @@ if (process.env.NODE_ENV !== 'production') {
   app.use('/dist', express.static(path.join(__dirname , '../dist')));
   app.use('*/public',express.static(path.join(__dirname , '../public')));
   app.use('*/assets',express.static(path.join(__dirname , '../dist/assets/')));
-  app.get('/', function response(req, res) {
-    res.sendFile(path.join(__dirname, '../dist/index.html'));
+  app.get('/*', function response(req, res) {
+      res.sendFile(path.join(__dirname, '../dist/index.html'));
   });
 }
 
@@ -79,19 +98,5 @@ cluster.on('exit', (worker, code, signal) => {
   cluster.fork();
 });
 
-app.use(logger());
 
-app.use('/clients', clientRouter);
-app.use('/events',  eventRouter);
-app.use('/artists', artistRouter);
-
-app.post('/subscribe' , function(req , res){
-  let response = {
-    message: 'Something went wrong , please contact us.'
-  }
-  if(req.body.email){
-    response.message ='Thanks for subscribing.';
-  }
-  res.json(response);
-});
 
