@@ -61,7 +61,7 @@ export const initialState = {
            image:'assets/images/team/02.jpg',
            name: 'Vipul Pant',
            designation: 'Chief Technology Officer',
-           description:'Europe broadened their fan base even more to become one of the most successful bands in their genre.'
+           description:'Big band theory technical backbone along with his technical standpoint he also works in shadows to help big band theory to grow in business development.'
          },{
            image:'assets/images/team/02.jpg',
            name: 'Mansimran',
@@ -71,7 +71,7 @@ export const initialState = {
            image:'assets/images/team/02.jpg',
            name: 'Manjot Singh',
            designation: 'Chief Field Officer',
-           description:'Europe broadened their fan base even more to become one of the most successful bands in their genre.'
+           description:'Manjot is on of the sweet talker and helps big band theory to grow in Punjab reason, So whenever you are in punjab do meet and have a cold beer with him.'
          }
         ],
         socialBannerVideos:[
