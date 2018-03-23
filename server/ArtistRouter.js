@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router()
-const { normalize, schema } = require('normalizr');
 
 // middleware that is specific to this router
 router.use(function timeLog (req, res, next) {
-  console.info('At Artist Request  ---- Time: ', Date.now() )
+  console.info('At Artist Request  ---- Time: ', Date.now() );
   next();
 });
 
@@ -79,12 +78,7 @@ router.get('/featured/tracks', function(req, res){
       }
     ];
 
-    const artist = new schema.Entity('artists');
-    const song = new schema.Entity('songs', {
-        artist : artist
-    });
-    const normalizedData = normalize(songs, song);
-    console.log(normalizedData);
+
     res.json(songs);
 });
 
