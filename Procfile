@@ -1,1 +1,1 @@
-web: npm run build && npm start NODE_ENV=production
+web: npm run build && npm start NODE_ENV=heroku
