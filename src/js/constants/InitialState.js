@@ -44,7 +44,7 @@ export const initialState = {
         homeCarousal: {
          slides:[
            {
-             image:'https://scontent-bom1-1.xx.fbcdn.net/v/t31.0-8/20728970_708928505980840_1736726774778535887_o.jpg?oh=f8590f06fe44b9ee39cbbec02ac6e429&oe=5AA471F3',
+             image:'assets/images/background/events-background.jpeg',
              innerContent: '<i class="flaticon-glamour c-yellow"></i><h1 class="f-raleway c-yellow fw-900">FOR THE LOVE OF <span class="c-blue">(GOOD)</span> <br />MUSIC</h1><h6 class="f-robotoSlab c-lightGrey fw-400 mTop25"></h6><h3 class="f-damion c-yellow fw-400"></h3>'
            },
            {video:'https://www.facebook.com/musictbbt/videos/809839719223051/'},
@@ -53,7 +53,7 @@ export const initialState = {
         },
         teams: [
          {
-           image:'assets/images/team/akshay.jpg',
+           image:'assets/images/team/02.jpg',
            name: 'Akshay Ahuja',
            designation : 'Chief Executive Officer',
            description:'An ex Googler who believes that there is nothing like a dream job. You either have a dream or a job.Akshay started his career at Google, after 4 years of working there he decided to create a music company that would specifically support the indie circuit.'
@@ -63,12 +63,12 @@ export const initialState = {
            designation: 'Chief Technology Officer',
            description:'Europe broadened their fan base even more to become one of the most successful bands in their genre.'
          },{
-           image:'assets/images/team/mansimran-singh.jpg',
+           image:'assets/images/team/02.jpg',
            name: 'Mansimran',
            designation: 'Chief Operation Officer',
            description:'He is the co-founder in Big Band Theory and takes care of the Artist & Repertoire front at BBT. He also indulges himself in reading about musicology and its growth in India and the world.'
          },{
-           image:'assets/images/team/manjot.png',
+           image:'assets/images/team/02.jpg',
            name: 'Manjot Singh',
            designation: 'Chief Field Officer',
            description:'Europe broadened their fan base even more to become one of the most successful bands in their genre.'
