@@ -13,7 +13,6 @@ export default class BaseCarousal extends Component{
        arrows : false,
        slidesToShow: 1,
        slidesToScroll: 1,
-       dots : false,
        adaptiveHeight: false
     }
 
@@ -38,7 +37,7 @@ export default class BaseCarousal extends Component{
 
     render(){
       return(
-        <div style={{height: '100%'}}>
+        <div>
           <Slider ref={(x)=>this.slider=x} {...this.state.settings}>
             {this.slides}
           </Slider>

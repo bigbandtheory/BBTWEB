@@ -20,7 +20,6 @@ import 'jquery';
 import ReactPerfTool from 'react-perf-tool';
 import Perf from 'react-addons-perf';
 import 'react-perf-tool/lib/styles.css';
-import Footer from '../../components/Footer';
 import MusicPlayer from '../../components/MusicPlayer';
 
 import './index.css';
@@ -44,14 +43,10 @@ class Home extends Component{
 
     render(){
       return (
-         <div style={{height : '100%'}}>
-
+         <div>
           <div className="icon-scroll scrollFade" style={{opacity: 1}}></div>
-
-
-
           <div className="row homeSlider logo-container">
-            <HomeCarousal settings={{autoPlay: true, dots: true}}/>
+            <HomeCarousal settings={{ autoPlay: true, dots: true }}/>
           </div>
           <FastSlideShow {...this.props}>
             <div className="container hs-links">
@@ -93,7 +88,7 @@ class Home extends Component{
             </div>
           </VideoBanner>
           <ContactUs />
-          <Footer />
+
         </div>
       );
     }

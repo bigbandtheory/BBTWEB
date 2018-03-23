@@ -12,22 +12,28 @@ router.get('/featured' , function(req , res){
   var responseData = [
     {
       name : 'Hard Rock Cafe',
-      image: 'assets/images/clients/05.png'
+      image: 'assets/images/clients/Hard_Rock_Cafe.png'
     },{
-      name : 'Blue Frog',
-      image: 'assets/images/clients/05.png'
+      name : 'Ghanta Ghar',
+      image: 'assets/images/clients/Ghanta_Ghar.png'
     },{
-      name : 'World Intigrety Center',
-      image: 'assets/images/clients/05.png'
+      name : 'Firangi Dhaba',
+      image: 'assets/images/clients/firangi_dhaba2.png'
     },{
       name : 'Dug Out',
-      image: 'assets/images/clients/05.png'
+      image: 'assets/images/clients/Dugout.png'
     },{
-      name : 'BlueO',
-      image: 'assets/images/clients/05.png'
+      name : 'Great Indian Pub',
+      image: 'assets/images/clients/GIP.jpg'
     },{
-      name : 'Cross Bar',
-      image: 'assets/images/clients/05.png'
+      name : 'Blue Frog',
+      image: 'assets/images/clients/BlueFrog.jpg'
+    },{
+      name : 'Hyatt Regency',
+      image: 'assets/images/clients/Hyatt-Regency-logo.png'
+    },{
+      name : 'World Intigrety Center',
+      image: 'assets/images/clients/WIC.jpg'
     }
   ];
 

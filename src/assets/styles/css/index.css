@@ -70,7 +70,7 @@
 
 
 html { height: 100% !important; margin: 0 !important;}
-body { background-color: #202124; margin: 0 !important; height: 100% !important; font-family: 'Open Sans', sans-serif; font-size: 13px; color: #202124; font-weight: 400; }
+body { background-color: #202124; margin: 0 !important; padding-bottom:50px !important; height: 100% !important; font-family: 'Open Sans', sans-serif; font-size: 13px; color: #202124; font-weight: 400; }
 
 .main-wrapper {
   height: 100%;
@@ -84,6 +84,27 @@ body { background-color: #202124; margin: 0 !important; height: 100% !important;
   height: auto;
 }
 
+.card .card-image {
+    height: 250px;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-position: 50% 50%;
+    background-color: #eff;
+}
+
+.flip .client .front {
+    display : block !important;
+}
+
+.slick-slide .container {
+     position: absolute;
+     padding: 50px;
+     top: 25%;
+}
 .music-bar{
     position: fixed !important;
     width: 90px;
@@ -99,7 +120,7 @@ body { background-color: #202124; margin: 0 !important; height: 100% !important;
     box-shadow: 0 1px 4px 1px #000;
     height: 50px !important;
     width: 100% !important;
-    top: 92% !important;
+    top: 94.5% !important;
     padding: 20px auto !important;
     //background: #fff !important;
     right: 0px;
@@ -125,6 +146,7 @@ div.gallery-wrapper iframe {
 
 .slick-slide .container{
   padding: 50px;
+  z-index: 9999;
 }
 
 .slick-list{

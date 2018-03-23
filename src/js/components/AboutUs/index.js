@@ -17,9 +17,11 @@ export default class AboutUs extends Component{
             </div>
             <div className="col-lg-5 col-sm-12 col-xs-12 pLeft50 pRight50 middleWrapper">
                 <h2 className="f-raleway fw-900 c-darkGrey">ORIGINAL IS GOOD</h2>
-                <h5 className="f-robotoSlab fw-600 c-darkGrey">Nullam felis metus, elementum in ante et, consequat malesuada turpis. Sed semper dolor nec lacus consectetur dignissim.</h5>
-                <p className="c-darkGrey">Cras arcu enim, pulvinar sit amet sodales eu, <mark>default mark text.</mark> Curabitur placerat, enim an elementum, dolor eros rhoncus lacus, varius dictum velit turpis
-                &nbsp;<span className="c-red">red highlight text</span> vel nisi. Nullam felis metus, elementum in ante et, consequat malesuada turpis. Sed semper dolor nec lacus. Maecenas tristique libero ac urna bibendum, quis blandit sem sodales.</p>
+                <h5 className="f-robotoSlab fw-600 c-darkGrey">Big Band Theory is a <span className="c-red">music company</span> formed with the vision to promote the independent music circuit of the country.</h5>
+                <p className="c-darkGrey">We work with artist and help them with their overall growth, helping them in increasing their value in the market.
+                    We take the music to the right audiences. We call it band branding. Making band the brand.
+                    We organize gigs at different venues and events. As curators, we work on the same theory of band branding. We study the audiences and demographics at different venues and accordingly program artists.
+                    We launch music, build concepts and provide artists for venues & festivals.</p>
                 <a className="signatureButton c-darkGrey" href="#"><h3>Contact Us Now</h3></a>
             </div>
           </div>

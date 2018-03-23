@@ -43,8 +43,11 @@ export const initialState = {
         },
         homeCarousal: {
          slides:[
-           {image:'https://scontent-bom1-1.xx.fbcdn.net/v/t31.0-8/20728970_708928505980840_1736726774778535887_o.jpg?oh=f8590f06fe44b9ee39cbbec02ac6e429&oe=5AA471F3'},
-           {image:'https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/16299239_609247709282254_494215141630309822_n.png?oh=6df86036fbccf512ba93a77b1d6b016d&oe=5A8A0B3D'},
+           {
+             image:'https://scontent-bom1-1.xx.fbcdn.net/v/t31.0-8/20728970_708928505980840_1736726774778535887_o.jpg?oh=f8590f06fe44b9ee39cbbec02ac6e429&oe=5AA471F3',
+             innerContent: '<i class="flaticon-glamour c-yellow"></i><h1 class="f-raleway c-yellow fw-900">FOR THE LOVE OF <span class="c-blue">(GOOD)</span> <br />MUSIC</h1><h6 class="f-robotoSlab c-lightGrey fw-400 mTop25"></h6><h3 class="f-damion c-yellow fw-400"></h3>'
+           },
+           {video:'https://www.facebook.com/musictbbt/videos/809839719223051/'},
            {image:'assets/images/slider/slide-01.jpg'}
          ]
         },
