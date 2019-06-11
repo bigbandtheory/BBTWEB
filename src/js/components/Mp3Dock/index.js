@@ -1,4 +1,5 @@
-import React,{Component, PropTypes} from 'react';
+import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import MusicPlayer from '../MusicPlayer';
 import {connect} from 'react-redux';
@@ -33,7 +34,7 @@ class Mp3Dock extends Component {
 
   render(){
      let wrapperCls= classnames({
-        'music-bar  pattern-white' : true,
+        'music-bar  pattern-grey' : true,
 
      });
      let iconCls = classnames({
@@ -45,9 +46,9 @@ class Mp3Dock extends Component {
      return(
        <div className={wrapperCls}>
         <div>
-            <div className="icon-wrap">
+            {/*<div className="icon-wrap">
               <span className={iconCls} aria-hidden="true" />
-            </div>
+            </div>*/}
              <div className={slideCls} id="music-player">
                <MusicPlayer autoplay = {false}/>
             </div>

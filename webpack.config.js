@@ -1,13 +1,12 @@
 'use strict';
 
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-//process.env.NODE_ENV = 'production';
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = {
+const config = {
   devtool: 'source-map',
   entry: {
     main : path.join(__dirname, 'src/index.js'),
@@ -16,7 +15,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist/'),
-    filename: '[name]-[hash].min.js',
+    filename: process.env.NODE_ENV === 'production'? '[name]-[hash].min.js': '[name]-[hash].js',
     publicPath: '/dist/'
   },
   plugins: [
@@ -26,12 +25,6 @@ module.exports = {
       template: path.join(__dirname, 'template/index.ejs')
     }),
     new ExtractTextPlugin('[name]-[hash].min.css'),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false,
-        screw_ie8: true
-      }
-    }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       'process.env.apiKey' : 'AIzaSyBM3QqWF3ngbOordLdWmS-yyvKaSQ1atEI',
@@ -40,50 +33,60 @@ module.exports = {
       'process.env.projectId' : 'bbt-web',
       'process.env.storageBucket': 'bbt-web.appspot.com',
       'messagingSenderId' : '749082017862',
-      'process.env.FB_APP_ID': '1394137447399587'
+      'process.env.FB_APP_ID': '652025375244402'
     }),
     new webpack.LoaderOptionsPlugin({
       "__DEVTOOLS__": true,
-        debug: false,
-        cache: false
+      debug: false,
+      cache: false
     }),
     new CopyWebpackPlugin([
-        {from : 'src/assets', to : './assets'}
+      {from : 'src/assets', to : './assets'}
     ])
   ],
   module: {
     loaders: [
-    {
-      test: /\.(js)$/,
-      loaders: 'babel-loader',
-      exclude: /node_modules/,
-      query: {
-         cacheDirectory: true,
-         presets: ['react', 'es2015','stage-0']
-      }
-    },
+      {
+        test: /\.(js)$/,
+        loaders: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          cacheDirectory: true,
+          presets: ['react', 'es2015','stage-0']
+        }
+      },
 
-    {
-      test: /\.(json)$/,
-      loader: 'json-loader',
-    },
-    {
-      test: /\.svg(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      loader: 'file-loader?name=./assets/svg/[name]-[hash].[ext]',
-    },
-    {
-      test: /\.(jpg|png|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      loader: 'url-loader?name=./assets/images/[name]-[hash].[ext]',
-    },{
-      test: /\.(woff|woff2|eot|ttf|otf)$/,
-      loader: "file-loader?name=./assets/fonts/[name]-[hash].[ext]",
-    }, {
-      test: /\.css$/,
-      loader: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: ['css-loader', 'resolve-url-loader']
-      }),
-    }
+      {
+        test: /\.(json)$/,
+        loader: 'json-loader',
+      },
+      {
+        test: /\.svg(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader?name=./assets/svg/[name]-[hash].[ext]',
+      },
+      {
+        test: /\.(jpg|png|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?name=./assets/images/[name]-[hash].[ext]',
+      },{
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        loader: "file-loader?name=./assets/fonts/[name]-[hash].[ext]",
+      }, {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'resolve-url-loader']
+        }),
+      }
     ]
   }
 };
+const uglifyPlugin = new webpack.optimize.UglifyJsPlugin({
+  compressor: {
+    warnings: false,
+    screw_ie8: true
+  }
+});
+
+process.env.NODE_ENV === 'production' ? config.plugins.push(uglifyPlugin): null;
+
+module.exports = config;

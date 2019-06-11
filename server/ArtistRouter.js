@@ -3,7 +3,7 @@ const router = express.Router()
 
 // middleware that is specific to this router
 router.use(function timeLog (req, res, next) {
-  console.info('At Artist Request  ---- Time: ', Date.now() );
+
   next();
 });
 

@@ -1,4 +1,5 @@
-import React,{Component,PropTypes} from 'react';
+import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 const Snap = require(`imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js`);
 

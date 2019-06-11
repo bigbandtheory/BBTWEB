@@ -1,4 +1,5 @@
-import React,{Component,PropTypes} from 'react';
+import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import HeaderBar from '../../components/HeaderBar';
 import classNames from 'classnames';
@@ -17,10 +18,7 @@ import Events from '../../components/Events';
 import ShinyHeading from '../../components/ShinyHeading';
 import ContactUs from '../../components/ContactUs';
 import 'jquery';
-import ReactPerfTool from 'react-perf-tool';
-import Perf from 'react-addons-perf';
 import 'react-perf-tool/lib/styles.css';
-import MusicPlayer from '../../components/MusicPlayer';
 
 import './index.css';
 

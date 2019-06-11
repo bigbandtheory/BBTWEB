@@ -19,6 +19,8 @@ const clientRouter = require('./ClientRouter');
 const eventRouter  = require('./EventRouter');
 const artistRouter = require('./ArtistRouter');
 
+const numCPUs = require('os').cpus().length;
+
 app.use(compression());
 // parse application/json
 app.use(bodyParser.json());

@@ -1,4 +1,5 @@
-import React,{Component, PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import BaseField from './BaseField';
 
 export default class TextField extends BaseField{
@@ -10,16 +11,16 @@ export default class TextField extends BaseField{
   }
 
   static propTypes =Object.assign({}, BaseField.propTypes, {
-    type: React.PropTypes.string.isRequired,
-    maxLength: React.PropTypes.number,
-    placeholder: React.PropTypes.string,
-    onChange: React.PropTypes.func,
-    onBlur: React.PropTypes.func,
-    onKeyUp: React.PropTypes.func,
-    elementId: React.PropTypes.string,
-    tabIndex: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number,
+    type: PropTypes.string.isRequired,
+    maxLength: PropTypes.number,
+    placeholder: PropTypes.string,
+    onChange: PropTypes.func,
+    onBlur: PropTypes.func,
+    onKeyUp: PropTypes.func,
+    elementId: PropTypes.string,
+    tabIndex: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
     ]),
   });
 

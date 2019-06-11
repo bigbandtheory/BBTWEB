@@ -1,4 +1,5 @@
-import React,{Component, PropTypes} from 'react';
+import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 import Form from './form';
 import {sendSubscriptionMessage} from '../../network';
 import Button from '../Fields/Button';

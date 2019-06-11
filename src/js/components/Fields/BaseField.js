@@ -1,6 +1,7 @@
-import React,{Component , PropTypes} from 'react';
+import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 import {errorMessages} from './ErrorMessages';
-import {omit, keys, first, pickBy} from 'lodash';
+import {keys, first, pickBy} from 'lodash';
 
 export default class BaseField extends Component{
 

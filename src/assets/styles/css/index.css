@@ -88,7 +88,7 @@ body { background-color: #202124; margin: 0 !important; padding-bottom:50px !imp
     height: 250px;
     width: 100%;
     display: block;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-position-x: 50%;
@@ -124,6 +124,7 @@ body { background-color: #202124; margin: 0 !important; padding-bottom:50px !imp
     padding: 20px auto !important;
     //background: #fff !important;
     right: 0px;
+    color: white;
 }
 
 .gallery-wrapper {
@@ -208,7 +209,7 @@ div.gallery-wrapper iframe {
   //top:0px;
 }
 
-.player-container{
+.player-container {
   border-radius : 0px !important;
 }
 

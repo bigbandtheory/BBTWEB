@@ -5,9 +5,9 @@
   "dependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-jest": "^21.2.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
     "babel-jscs": "^3.0.0-beta1",
     "babel-loader": "^7.1.2",
     "babel-plugin-es6-promise": "^1.1.1",
@@ -32,27 +32,28 @@
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-15": "^1.0.1",
     "es6-promise": "^4.1.1",
+    "eslint": "^5.14.1",
     "express": "^4.16.1",
     "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^0.11.2",
-    "firebase": "^4.6.0",
     "html-webpack-plugin": "^2.30.1",
     "imports-loader": "^0.7.1",
     "isomorphic-fetch": "^2.2.1",
-    "jest": "^21.2.1",
+    "jest": "^24.1.0",
     "jquery": "^3.2.1",
     "jsdom": "^11.3.0",
     "json-loader": "^0.5.7",
     "lodash": "^4.17.4",
-    "mocha": "^3.5.3",
+    "mocha": "^6.0.1",
     "mongoose": "^4.12.1",
     "morgan": "^1.9.0",
     "postcss-loader": "^2.0.6",
-    "react": "^15.6.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
     "react-addons-perf": "^15.4.2",
     "react-addons-test-utils": "^15.6.2",
     "react-cl-audio-player": "^2.0.0",
-    "react-dom": "^15.6.2",
+    "react-dom": "^16.3.0",
     "react-hot-loader": "^3.1.3",
     "react-images": "^0.5.11",
     "react-music-player": "^1.0.3",
@@ -73,7 +74,7 @@
     "snapsvg": "^0.5.1",
     "stats-webpack-plugin": "latest",
     "style-loader": "^0.18.2",
-    "url-loader": "^0.5.9",
+    "url-loader": "^1.1.2",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.19.1"
@@ -110,7 +111,5 @@
       "./jest-setup.js"
     ]
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }

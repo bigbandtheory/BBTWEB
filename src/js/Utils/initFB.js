@@ -11,7 +11,7 @@ export default function initFB(callback){
       version          : 'v2.10'
     });
     FB.AppEvents.logPageView();
-    callback();
+    //callback();
   };
   loadFBScript(document, 'script', 'facebook-jssdk');
 }

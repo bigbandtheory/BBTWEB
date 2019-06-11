@@ -9,7 +9,7 @@ const store = getStore(rootReducer, initialState, [thunk]);
 export function getStore(rootReducer, initialState = null, middleware = []){
     return createStore(rootReducer, initialState, compose(
         applyMiddleware.apply(this, middleware),
-        window.devToolsExtension ? window.devToolsExtension() : f => f
+        window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : f => f
     ));
 }
 

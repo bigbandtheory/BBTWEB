@@ -5,7 +5,7 @@
 
 
 .player-container {
-  width: 86%;
+  width: 96%;
   margin: 0 auto;
   display: flex;
   overflow: hidden;
@@ -65,7 +65,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #7748B5;
+  background-color: #ffbe0e;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 2px;
 }
 .player-options {
