@@ -1,21 +1,19 @@
 import React from 'react';
-import { BrowserRouter, Route,IndexRoute, Switch, Link } from 'react-router-dom';
+import {Route, Switch, Link} from 'react-router-dom';
 import Home from '../containers/Home';
 import MainWrapper from '../MainWrapper';
 import ArtistDetail from '../containers/PortfolioDetail/Artist';
 import Artists from '../containers/Artists';
 
 export default () => {
- return (
-   <BrowserRouter>
-       <Switch>
+    return (
+        <Switch>
             <MainWrapper>
-                <Route exact path='/' component={Home} />
-                <Route path='/artists' component={Artists} />
-                 <Route path='/artists/:id' component={ArtistDetail} />
+                <Route exact path='/' component={Home}/>
+                <Route path='/artists' component={Artists}/>
+                <Route path='/artists/:id' component={ArtistDetail}/>
             </MainWrapper>
-       </Switch>
-   </BrowserRouter>
- )
+        </Switch>
+    )
 }
 

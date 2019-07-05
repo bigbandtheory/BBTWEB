@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import './AudioPlayer.css';
+import('./AudioPlayer.css');
 
 class AudioPlayer extends PureComponent {
 

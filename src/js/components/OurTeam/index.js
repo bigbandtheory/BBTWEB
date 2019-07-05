@@ -1,3 +1,4 @@
+/*
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
@@ -105,4 +106,4 @@ class TeamItem extends Component{
   }
 }
 
-export default connect(mapStateToProps)(OurTeam);
+export default connect(mapStateToProps)(OurTeam);*/

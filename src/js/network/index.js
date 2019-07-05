@@ -7,7 +7,7 @@ const defaultOptions = {
     'Accept': 'application/json',
   }),
   credentials: "same-origin"
-}
+};
 
 function makeRequest(uri , options){
   return fetch( uri, options ).then(function(response) {

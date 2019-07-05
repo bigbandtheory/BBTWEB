@@ -1,12 +1,12 @@
 import React,{Component} from 'react';
-import PropTypes from 'prop-types';
-import {Provider,connect} from 'react-redux';
+import {Provider} from 'react-redux';
 import store from './redux/store';
 import * as actions from './redux/Actions';
-import { Router, Route, IndexRoute } from 'react-router';
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
-import {createBrowserHistory} from 'history';
+import { Router }  from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
+import { createMemoryHistory } from 'history';
 import Routes from './Routes';
+
 
 
 class App extends Component{
@@ -16,7 +16,9 @@ class App extends Component{
     }
 
     componentWillMount(){
-        const browserHistory = createBrowserHistory();
+        const browserHistory = createMemoryHistory({
+            initialEntries: ['/']
+        });
         this.history = syncHistoryWithStore(browserHistory, store);
     }
 

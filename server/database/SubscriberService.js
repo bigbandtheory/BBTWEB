@@ -1,3 +1,4 @@
+/*
 
 const config = require('./config');
 const fireBase = require('firebase');
@@ -5,7 +6,7 @@ const fireBase = require('firebase');
 export default class SubscribeService {
 
   constructor(){
-    super();
+    //super();
     fireBase.initializeApp(config);
     this.database = fireBase.database();
     this.subscribers = database.ref().child('subscribers');
@@ -18,4 +19,4 @@ export default class SubscribeService {
 
   }
 
-}
+}*/

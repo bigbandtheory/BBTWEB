@@ -7,7 +7,6 @@ import FastSlideShow from '../../components/FastSlideShow';
 import HomeCarousal from '../../components/Carausal/HomeCarousal';
 import AboutUs from '../../components/AboutUs'
 import RedBanner from '../../components/RedBanner';
-import OurTeam from '../../components/OurTeam';
 import BigBoard from '../../components/BigBoard';
 import ArtistCarousal from '../../components/Artist/ArtistCarousal';
 import WhatWeDo from '../../components/WhatWeDo';
@@ -20,7 +19,7 @@ import ContactUs from '../../components/ContactUs';
 import 'jquery';
 import 'react-perf-tool/lib/styles.css';
 
-import './index.css';
+require('./index.css');
 
 const mapStateToProps = (state) => {
    return {
@@ -70,7 +69,6 @@ class Home extends Component{
                 <div className="mTop30"><i className="flaticon-chat73 iconSize60 c-white hvr-wobble-to-top-right"></i></div>
             </div>
           </RedBanner>
-          <OurTeam />
           <BigBoard title="ARTISTS" />
           <ArtistCarousal />
           <WhatWeDo />

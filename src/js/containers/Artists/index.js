@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import ArtistList from './ArtistList';
 import {listAllArtist,listFeaturedArtist} from '../../redux/Actions';
 import ProjectCarousal from '../../components/Carausal/ProjectCarousal';
-import './index.css';
+require('./index.css');
 
 const mapStateToProps = (state) =>{
     return {
