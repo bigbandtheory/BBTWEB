@@ -91,7 +91,6 @@ if (process.env.NODE_ENV !== 'production') {
      app.use(middleware);
      app.use(webpackHotMiddleware(compiler));*/
 
-    console.log('DIRECTORY LOCATION ----',cwd);
     app.use('/dist', express.static(path.join(cwd, '/dist')));
     app.use('*/assets/', express.static(path.join(cwd, '/dist/assets/')));
     app.use('*/js/', express.static(path.join(cwd, '/dist/js/')));
