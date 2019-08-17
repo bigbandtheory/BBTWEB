@@ -7,6 +7,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
+  /*externals: {
+    "react": "React",
+    "react-dom": "ReactDOM"
+  },*/
+  /*resolve: {
+    extensions: [".ts", "tsx",]
+  },*/
   devtool: 'source-map',
   entry: {
     main : path.join(__dirname, 'src/index.js'),
@@ -55,7 +62,15 @@ const config = {
           presets: ['react', 'es2015','stage-0']
         }
       },
-
+      {
+        test: /\.ts(x?)$/,
+        exclude: /node_modules/,
+        loader: "ts-loader"
+      },{
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader"
+      },
       {
         test: /\.(json)$/,
         loader: 'json-loader',

@@ -12,7 +12,7 @@ export default class AboutUs extends Component{
           <div className="row bg-white logo-container" id="about" style={{position: 'relative', overflow: 'hidden'}}>
             <div className="col-lg-7 col-sm-12 col-xs-12 p20 bg-white middleWrapper">
                 <div className="pageImage">
-                    <img src="https://scontent.fdel1-1.fna.fbcdn.net/v/t31.0-8/15874775_599545063585852_5769838704817646960_o.jpg?oh=a14e5a2df56b6b892595f5617f96a327&oe=5ACFFF32" alt="About"/>
+                    <img src="https://bigbandtheory.s3.ap-south-1.amazonaws.com/images/extras/bbt_logo_strip.jpg" alt="About"/>
                 </div>
             </div>
             <div className="col-lg-5 col-sm-12 col-xs-12 pLeft50 pRight50 middleWrapper">
