@@ -1,6 +1,6 @@
 import {Promise} from "es6-promise";
 
-export const sendMail = (from, to, subject, body ) => {
+export const sendMail = async (from, to, subject, body ) => {
     const transporter = nodemailer.createTransport({
         service: 'zoho',
         auth: {
@@ -14,9 +14,12 @@ export const sendMail = (from, to, subject, body ) => {
     };
     mailOptions.subject = 'Enquiry from:' + subject;
     mailOptions.text = body;
-    return new Promise((res, rej) => {
+    return new Promise((resolve, reject) => {
         transporter.sendMail(mailOptions, function(error, info){
-
+            if(error){
+                reject(error);
+            }
+            resolve(info);
         });
     });
 };
