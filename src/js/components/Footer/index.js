@@ -48,11 +48,11 @@ export default class Footer extends Component{
         </div>
         <div className="container">
             <ul className="social mBottom40 mTop20">
-                <li className="twitter"><a href="#" aria-hidden="true" className="icon icon-twitter"></a><span className="tooltip">Twitter</span></li>
-                <li className="facebook"><a href="#" aria-hidden="true" className="icon icon-facebook"></a><span className="tooltip">Facebook</span></li>
-                <li className="youtube"><a href="#" aria-hidden="true" className="icon icon-youtube"></a><span className="tooltip">Youtube</span></li>
-                <li className="linkedin2"><a href="#" aria-hidden="true" className="icon icon-linkedin2"></a><span className="tooltip">Linkedin</span></li>
-                <li className="soundcloud"><a href="#" aria-hidden="true" className="icon icon-soundcloud"></a><span className="tooltip">Soundcloud</span></li>
+                <li className="twitter"><a target="_blank" href="https://twitter.com/bbt85" aria-hidden="true" className="icon icon-twitter"></a><span className="tooltip">Twitter</span></li>
+                <li className="facebook"><a target="_blank" href="https://www.facebook.com/musictbbt" aria-hidden="true" className="icon icon-facebook"></a><span className="tooltip">Facebook</span></li>
+                <li className="youtube"><a target="_blank" href="#" aria-hidden="true" className="icon icon-youtube"></a><span className="tooltip">Youtube</span></li>
+                <li className="linkedin2"><a target="_blank" href="https://www.linkedin.com/company/13243784" aria-hidden="true" className="icon icon-linkedin2"></a><span className="tooltip">Linkedin</span></li>
+                <li className="soundcloud"><a target="_blank" href="https://soundcloud.com/thebigbandtheorymusic" aria-hidden="true" className="icon icon-soundcloud"></a><span className="tooltip">Soundcloud</span></li>
             </ul>
         </div>
         <div className="container">

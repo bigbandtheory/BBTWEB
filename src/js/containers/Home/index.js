@@ -86,7 +86,6 @@ class Home extends Component{
             </div>
           </VideoBanner>
           <ContactUs />
-
         </div>
       );
     }

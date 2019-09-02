@@ -39,7 +39,6 @@ class MainWrapper extends Component{
         <div className={wrapperClass}>
            <HeaderBar />
            {this.props.children}
-           <Mp3Dock />
            <Footer />
         </div>
       );

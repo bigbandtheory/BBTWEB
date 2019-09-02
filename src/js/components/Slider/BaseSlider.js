@@ -70,19 +70,17 @@ export default class BaseSlider extends Component{
 
     return(
       <nav>
-        <a onClick={this.goToPrev.bind(this)} onMouseLeave={(e)=> this.setState({ isPrevHover : false})} onMouseOver={(e)=> this.setState({ isPrevHover : true})} ref={(x) => this.prevBtn = x} className={prevBtnCls}><span>PREV</span></a>
-        <a onClick={this.goToNext.bind(this)} onMouseLeave={(e)=> this.setState({ isNextHover : false})} onMouseOver={(e)=> this.setState({ isNextHover : true})} ref={(x) => this.nextBtn = x} className={nextBtnCls}><span>NEXT</span></a>
+        <a onClick={this.goToPrev.bind(this)} onMouseLeave={()=> this.setState({ isPrevHover : false})} onMouseOver={(e)=> this.setState({ isPrevHover : true})} ref={(x) => this.prevBtn = x} className={prevBtnCls}><span>PREV</span></a>
+        <a onClick={this.goToNext.bind(this)} onMouseLeave={()=> this.setState({ isNextHover : false})} onMouseOver={(e)=> this.setState({ isNextHover : true})} ref={(x) => this.nextBtn = x} className={nextBtnCls}><span>NEXT</span></a>
         <div className="point"></div>
       </nav>
     );
   }
 
-
-
   render(){
      return(
        <div ref={(x)=>this.container = x} id="ps-container" className="ps-container">
-        <div ref={(x)=>this.contentWrapper = x} className="ps-contentwrapper">
+        <div className="ps-contentwrapper">
           {this.navigation}
           {this.contentSlides}
         </div>
