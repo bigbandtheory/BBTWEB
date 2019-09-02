@@ -15,7 +15,7 @@ class ArtistCarousal extends Component{
    static defaultProps = {
      slides: [],
      imageSlides: []
-   }
+   };
 
 
     render(){

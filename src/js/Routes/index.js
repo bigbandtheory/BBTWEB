@@ -12,7 +12,7 @@ export default () => {
             <MainWrapper>
                 <Route exact path='/' component={Home} />
                 <Route path='/artists' component={Artists} />
-                 <Route path='/artists/:id' component={ArtistDetail} />
+               {/* <Route component={} />*/}
             </MainWrapper>
        </Switch>
    </BrowserRouter>

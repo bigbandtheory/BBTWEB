@@ -1,22 +1,21 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 
-export default class Parrallax extends Component{
+export default class Parrallax extends Component {
 
-  static propTypes = {
-    backgroundImage : PropTypes.string.isRequired,
+    static propTypes = {
+        backgroundImage: PropTypes.string.isRequired,
+    };
+  
+    render() {
 
-  }
-
-
-  render(){
-
-    return(
-      <div className={`parallax ${this.props.className}`} style={{backgroundImage: `url(${this.props.backgroundImage})`}}>
-          {this.props.children}
-      </div>
-    );
-  }
+        return (
+            <div className={`parallax ${this.props.className}`}
+                 style={{backgroundImage: `url(${this.props.backgroundImage})`}}>
+                {this.props.children}
+            </div>
+        );
+    }
 
 }

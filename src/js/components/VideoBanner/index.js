@@ -9,11 +9,11 @@ export default class VideoBanner extends Component{
   static propTypes = {
     videoSources : PropTypes.array.isRequired,
     theme : PropTypes.string
-  }
+  };
 
   static defaultProps = {
     theme : 'white'
-  }
+  };
   constructor(props){
     super(props);
   }

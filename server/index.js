@@ -8,6 +8,7 @@ const webpackHotMiddleware = require('webpack-hot-middleware');
 const config = require('../webpack.config.js');
 const compression = require('compression');
 const logger = require('morgan');
+const mailer = require('nodemailer');
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const port = isDeveloping ? 3000 : process.env.PORT;
 const app = express();
@@ -36,9 +37,10 @@ app.use('/artists', artistRouter);
 app.post('/subscribe' , function(req , res){
   let response = {
     message: 'Something went wrong , please contact us.'
-  }
+  };
   if(req.body.email){
     response.message ='Thanks for subscribing.';
+
   }
   res.json(response);
 });
