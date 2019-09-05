@@ -13,7 +13,7 @@ class Client extends Component{
 
   static propTypes = {
     clients : PropTypes.array.isRequired
-  }
+  };
 
   render(){
     return(
@@ -24,14 +24,13 @@ class Client extends Component{
           </h2>
           {
             this.props.clients.map((client, index)=>{
-              return <Card item ={client} key={index} ></Card>
+              return <Card item ={client} key={index} />
             })
           }
         </div>
       </div>
     );
   }
-
 }
 
 export default connect(mapStateToProps)(Client);

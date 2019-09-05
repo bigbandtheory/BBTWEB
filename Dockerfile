@@ -2,6 +2,8 @@ FROM node:8
 
 WORKDIR /usr/images/app
 
+RUN npm install -g webpack webpack-cli rimraf
+
 RUN npm install yarn -g
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
