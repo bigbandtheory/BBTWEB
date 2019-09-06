@@ -5,7 +5,7 @@ const VideoGrid = ({videos = []}) => {
         <div className="gallery-wrapper">{
             videos && videos.map(({ url: videoUrl, artist }) => {
             return (
-                <div className="gallery-item" style={{ width:"180px", height:"250px" }} key={artist}>
+                <div className="gallery-item"  key={artist}>
                     <video
                         src={videoUrl}
                         controls

@@ -24,10 +24,13 @@ export default class VideoBanner extends Component {
             'pattern-white': this.props.theme === 'white',
             'pattern-black': this.props.theme === 'black',
         });
-        cls = cls + ` ${this.props.className}`
+        const { title, className } = this.props;
+        cls = cls + ` ${className}`;
         return (
             <div className={cls} style={{position: 'relative', overflow: 'hidden'}}>
-                <video autoPlay loop>
+                <h2 className="sectionTitle f-damion c-white">{title}</h2>
+                <video className='video-banner' autoPlay loop>
+
                     {
                         this.props.videoSources.map((source, index) => {
                             return <source key={index} src={source.url} type={source.type}/>

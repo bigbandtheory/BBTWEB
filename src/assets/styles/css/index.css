@@ -105,7 +105,7 @@ body { background-color: #202124; margin: 0 !important; padding-bottom:50px !imp
      padding: 50px;
      top: 25%;
 }
-.music-bar{
+.music-bar {
     position: fixed !important;
     width: 90px;
     height: 90px;
@@ -128,19 +128,30 @@ body { background-color: #202124; margin: 0 !important; padding-bottom:50px !imp
 }
 
 .gallery-wrapper {
-  display: block;
+  display: flex;
   padding: 0px 80px;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
-div.gallery-wrapper iframe {
-    width: 100%;
-    height: auto;
+div.gallery-wrapper video {
+  width: 250px;
+  height: 250px;
 }
 
 .gallery-wrapper div.gallery-item {
   margin: 5px;
   border: 1px solid #ccc;
-  float: left;
+
 }
 
 
@@ -366,7 +377,7 @@ p span { font-weight: bold; }
 
 blockquote { font-family: 'Roboto Slab', serif; font-size:17px; font-weight: bold; font-style: italic;}
 
-.sectionTitle { margin: 50px 0; text-align: center; -webkit-transition: .3s; transition: .3s; }
+.sectionTitle { margin: 50px 0; text-align: center; -webkit-transition: .3s; transition: .3s; position: relative; z-index: 9999; }
 .sectionTitle::after { display: block; content: ""; bottom: 0; margin: 30px auto; width: 50px; border-bottom: 2px solid; }
 
 header { height:100%;}
@@ -2678,12 +2689,12 @@ ul.nav.nav-pills.dubstepTabs li a {
 .row.video {
   overflow: hidden;
   position: relative;
-  height: 600px;
 }
 
-.row.video video {
+.video-banner {
   position: absolute;
   visibility: visible;
+  margin: 0 auto;
   margin: 0 auto;
   display: inline-block;
   top: -9999px;

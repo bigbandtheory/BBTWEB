@@ -71,7 +71,7 @@ class Home extends Component {
                 <BigBoard title="ARTISTS"/>
                 <ArtistCarousal/>
                 <WhatWeDo/>
-                <VideoBanner className="our-video" videoSources={this.props.socialVideos}>
+                <VideoBanner className="our-video" title='Our Videos' videoSources={this.props.socialVideos}>
                     <VideoGrid videos={videos} />
                 </VideoBanner>
                 <Client/>
