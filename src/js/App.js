@@ -25,10 +25,10 @@ class App extends Component{
       store.dispatch(actions.getAllEvents());
       store.dispatch(actions.artistCarousal());
       store.dispatch(actions.featuredTracks());
+      store.dispatch(actions.featuredVideos());
     }
 
     render(){
-
       return(
          <Provider store={store}>
             <Router history={this.history}>

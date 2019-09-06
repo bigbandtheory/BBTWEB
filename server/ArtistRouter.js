@@ -1,4 +1,5 @@
 const express = require('express');
+const featuredVideo = require('./constants/FeaturedVideos');
 const router = express.Router();
 
 // middleware that is specific to this router
@@ -17,6 +18,10 @@ router.get('/all', function (req, res) {
 
 router.get(':id', function (req, res) {
 
+});
+
+router.get('/featured/videos', (req, res) => {
+    res.json(featuredVideo);
 });
 
 router.get('/featured/tracks', function (req, res) {

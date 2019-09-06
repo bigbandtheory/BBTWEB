@@ -42,6 +42,13 @@ export function featuredTracks(){
    }
 }
 
+export const featuredVideos = () => (dispatch) => {
+  return api.getFeaturedVideos().then((response) => dispatch({
+          type: types.FEATURED_VIDEO_LIST,
+          data: response,
+      })
+  );
+};
 
 export function featuredArtist(){
 }
